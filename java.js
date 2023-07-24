@@ -2,7 +2,6 @@ let playerScore = 0;
 let computerScore = 0;
 let draw = 0;
 const choice = ['rock','paper','scissor'];
-
 let playerWinRound = "Player win's this round!";
 let computerWinRound = "Computer win's this round!";
 let playerWin = "Congratulations! You have won the game."
@@ -26,26 +25,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-/*for (i=0; i<1000; i++) {
-    selectionButtons.forEach(selectionButtons => {
-        selectionButtons.addEventListener('click', e => {
-            const selectionName = selectionButtons.dataset.selection;
-            let playerSelection = selectionName; console.log(playerSelection);
-            let result = playRound(playerSelection, computerSelection);
-            console.log(result);
-            gameScore(result);
-            console.log("Your score is " + playerScore);
-            console.log("The computer's score is " + computerScore);
-            playerTally.textContent = ("Your score is " + playerScore);
-            computerTally.textContent = ("The computer's score is " + computerScore);
-        })
-    })
-
-    if (playerScore === 5 || computerScore === 5) {
-        break;
-    }
-}*/
-
 //function to keep score
 function gameScore(result) {
     if (result === playerWinRound) {
@@ -56,9 +35,6 @@ function gameScore(result) {
         draw++; 
     }
 }
-
-//random computer choice
-
 
 // calling out data of button 
 selectionButtons.forEach(selectionButtons => {
